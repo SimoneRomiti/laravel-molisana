@@ -1,7 +1,11 @@
 main{	
 	padding: 50px 100px;
-	h3{
+	background-image: url('../img/fondo-pag-speciali.jpg');
+	background-position: bottom;
+	background-size: cover;
+	h2{
 		margin-top: 10px;
+		color: $h2Color;
 	}
 	.cards-container{
 		display: flex;
@@ -9,9 +13,30 @@ main{
 		.card{
 			width: calc(100% / 3 - 10px);
 			margin: 5px;
+			position: relative;
+			.layover{
+				color: white;
+				font-size: 20px;
+				font-weight: 700;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $layoverBackground;
+				opacity: 0;
+				transition: opacity 0.5s;
+			}
 			img{
 				width: 100%;
 				display: block;
+			}
+			&:hover .layover{
+				opacity: 1;
+				cursor: pointer;
 			}
 		}
 	}

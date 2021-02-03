@@ -1,48 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href={{ asset("css/app.css") }}>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-</head>
-<body>
 
-	@include('partials.header')
+@extends('template');
 
+@section('content')
 	<main>
-		<h3>LE LUNGHE</h3>
+		<h2>LE LUNGHE</h2>
 		<div class="cards-container">
 			@foreach ($lunghe as $pasta)
 				<div class="card">
+					<div class="layover">
+						{{ $pasta["titolo"] }}
+					</div>
 					<img src="{{$pasta['src']}}" alt="">
+					
 				</div>
 			@endforeach
 		</div>
 
-		<h3>LE CORTE</h3>
+		<h2>LE CORTE</h2>
 		<div class="cards-container">
 			@foreach ($corte as $pasta)
 				<div class="card">
+					<div class="layover">
+						{{ $pasta["titolo"] }}
+					</div>
 					<img src="{{$pasta['src']}}" alt="">
 				</div>
 			@endforeach
 		</div>
 
-		<h3>LE CORTISSIME</h3>
+		<h2>LE CORTISSIME</h2>
 		<div class="cards-container">
 			@foreach ($cortissime as $pasta)
 				<div class="card">
+					<div class="layover">
+						{{ $pasta["titolo"] }}
+					</div>
 					<img src="{{$pasta['src']}}" alt="">
 				</div>
 			@endforeach
 		</div>
 	</main>
-
-	@include('partials.footer')
-	
-</body>
-</html>
+@endsection

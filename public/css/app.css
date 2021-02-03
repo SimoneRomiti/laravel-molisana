@@ -40,9 +40,13 @@ header li a:hover {
 
 main {
   padding: 50px 100px;
+  background-image: url("../img/fondo-pag-speciali.jpg");
+  background-position: bottom;
+  background-size: cover;
 }
-main h3 {
+main h2 {
   margin-top: 10px;
+  color: #093477;
 }
 main .cards-container {
   display: flex;
@@ -51,10 +55,31 @@ main .cards-container {
 main .cards-container .card {
   width: calc(100% / 3 - 10px);
   margin: 5px;
+  position: relative;
+}
+main .cards-container .card .layover {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(50, 50, 200, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 main .cards-container .card img {
   width: 100%;
   display: block;
+}
+main .cards-container .card:hover .layover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 footer {
