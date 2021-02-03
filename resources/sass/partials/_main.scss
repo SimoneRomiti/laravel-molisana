@@ -1,5 +1,5 @@
 main{	
-	padding: 50px 10%;
+	padding: $verticalPaddingMain $horizontalPaddingMain;
 	background-image: url('../img/fondo-pag-speciali.jpg');
 	background-position: bottom;
 	background-size: cover;
@@ -54,7 +54,7 @@ main{
 
 @media screen and(max-width: 576px){
 	main{
-		padding: 50px 20%;
+		padding: $verticalPaddingMain ($horizontalPaddingMain * 2);
 		.cards-container{
 			.card{
 				width: 100%;
