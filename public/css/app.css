@@ -41,6 +41,9 @@ header li a:hover {
 main {
   padding: 50px 100px;
 }
+main h3 {
+  margin-top: 10px;
+}
 main .cards-container {
   display: flex;
   flex-wrap: wrap;

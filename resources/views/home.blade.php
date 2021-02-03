@@ -22,6 +22,24 @@
 				</div>
 			@endforeach
 		</div>
+
+		<h3>LE CORTE</h3>
+		<div class="cards-container">
+			@foreach ($corte as $pasta)
+				<div class="card">
+					<img src="{{$pasta['src']}}" alt="">
+				</div>
+			@endforeach
+		</div>
+
+		<h3>LE CORTISSIME</h3>
+		<div class="cards-container">
+			@foreach ($cortissime as $pasta)
+				<div class="card">
+					<img src="{{$pasta['src']}}" alt="">
+				</div>
+			@endforeach
+		</div>
 	</main>
 
 	@include('partials.footer')

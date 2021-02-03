@@ -150,6 +150,10 @@ Route::get('/', function () {
             $cortissime [] = $pasta;
         }
     }
-    return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
+    return view('home', [
+        'lunghe' => $lunghe,
+        'corte' => $corte,
+        'cortissime' => $cortissime
+        ]);
 });
 
