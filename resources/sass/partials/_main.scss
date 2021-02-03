@@ -1,5 +1,5 @@
 main{	
-	padding: 50px 100px;
+	padding: 50px 10%;
 	background-image: url('../img/fondo-pag-speciali.jpg');
 	background-position: bottom;
 	background-size: cover;
@@ -37,6 +37,27 @@ main{
 			&:hover .layover{
 				opacity: 1;
 				cursor: pointer;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 768px){
+	main{
+		.cards-container{
+			.card{
+				width: calc(100% / 2 - 10px);
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 576px){
+	main{
+		padding: 50px 20%;
+		.cards-container{
+			.card{
+				width: 100%;
 			}
 		}
 	}

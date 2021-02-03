@@ -14,4 +14,21 @@ header{
 			}
 		}
 	}
+	.hamburger{
+		font-size: 25px;
+		color: $h2Color;
+		padding: 10px;
+		display: none;
+	}
+}
+
+@media screen and(max-width: 768px){
+	header{
+		.nav-lg{
+			display: none;
+		}
+		.hamburger{
+			display: block;
+		}
+	}
 }

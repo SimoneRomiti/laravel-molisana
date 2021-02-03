@@ -37,9 +37,23 @@ header li a {
 header li a:hover {
   background: #B2E5FC;
 }
+header .hamburger {
+  font-size: 25px;
+  color: #093477;
+  padding: 10px;
+  display: none;
+}
 
+@media screen and (max-width: 768px) {
+  header .nav-lg {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+  }
+}
 main {
-  padding: 50px 100px;
+  padding: 50px 10%;
   background-image: url("../img/fondo-pag-speciali.jpg");
   background-position: bottom;
   background-size: cover;
@@ -82,6 +96,19 @@ main .cards-container .card:hover .layover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  main .cards-container .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media screen and (max-width: 576px) {
+  main {
+    padding: 50px 20%;
+  }
+  main .cards-container .card {
+    width: 100%;
+  }
+}
 footer {
   text-align: center;
 }

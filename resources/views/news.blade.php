@@ -1,4 +1,5 @@
 @extends('template')
+
 @section('css')
 	<link rel="stylesheet" href={{ asset("css/news.css") }}>
 @endsection
