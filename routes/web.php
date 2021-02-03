@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route della homepage con funzione per filtrare un array e passare alla view le variabili di cui ho bisogno sottoforma di array chiave => valore dove la chiave sarà la variabile da chiamare nel blade che fa riferimento alla variabile indicata come valore
 Route::get('/', function () {
     $data = [
         [
@@ -157,6 +158,7 @@ Route::get('/', function () {
         ]);
 });
 
+// Route della pagina news
 Route::get('/news', function(){
     return view('news');
 });

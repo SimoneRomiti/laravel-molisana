@@ -1,5 +1,7 @@
+{{-- Homepage, viene caricato il template comune a tutte le pagine con extends, attraverso section inserisco il main della homepage che sarà differente da tutte le altre --}}
+{{-- per scrivere delle variabili di blade/php dentro l'html di un file blade.php devo usare le doppie graffe {{$variabile}} --}}
 
-@extends('template');
+@extends('layouts.template');
 
 @section('content')
 	<main>
@@ -21,7 +23,7 @@
 			@foreach ($corte as $pasta)
 				<div class="card">
 					<div class="layover">
-						{{ $pasta["titolo"] }}
+						{{ $pasta["titolo"] }}/
 					</div>
 					<img src="{{$pasta['src']}}" alt="">
 				</div>

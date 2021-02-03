@@ -1,3 +1,5 @@
+{{-- Pagina template da qui si parte per montare tutte le pagine del sito, header e footer sono inclusi e reteranno uguali per tutte le pagine, al posto del main abbiamo uno yeld in modo da inserire attraverso section il main di ogni singola pagina, abbiamo uno yeld anche nel css per aggiungere eventualmente un secondo file css per i main modificati --}}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,7 @@
 
 	<link rel="stylesheet" href={{ asset("css/app.css") }}>
 	@yield('css')
-	
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">

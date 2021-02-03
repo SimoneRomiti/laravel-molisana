@@ -1,6 +1,6 @@
 <header>
 	<img src="{{ asset("img/marchio-sito-test.png") }}" alt="">
-	
+
 	<div class="nav-lg">
 		<ul>
 			<li><a class="active" href="/">HOME</a></li>
