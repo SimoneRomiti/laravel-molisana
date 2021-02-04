@@ -1,0 +1,15 @@
+@import "partials/_variables.scss";
+.container{
+	text-align: center;
+	background-color: $backgroundImg;
+	padding: 50px 150px;
+	img{
+		width: 100%;
+		display: block;
+	}
+	p{
+		font-size: 25px;
+		text-align: left;
+		color: $h2Color;
+	}
+}
