@@ -1,5 +1,6 @@
 @import "partials/_variables.scss";
 .container{
+	position: relative;
 	text-align: center;
 	background-color: $backgroundImg;
 	padding: 50px 150px;
@@ -11,5 +12,29 @@
 		font-size: 25px;
 		text-align: left;
 		color: $h2Color;
+	}
+	ol{
+		color: $h2Color;
+		font-size: 20px;	
+	}
+	span{
+		color: $h2Color;
+		font-size: 20px;
+	}
+	.fa-chevron-left{
+		color: black;
+		position: absolute;
+		left: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 50px;
+	}
+	.fa-chevron-right{
+		color: black;
+		position: absolute;
+		right: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 50px;
 	}
 }

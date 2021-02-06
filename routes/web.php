@@ -22,7 +22,7 @@ Route::get('/', function () {
     $cortissime = [];
 
     foreach ($data as $key => $pasta) {
-        $pasta['id'] = $key;
+        $pasta['key'] = $key;
         if($pasta["tipo"] == "lunga"){
             $lunghe [] = $pasta;
         } elseif($pasta["tipo"] == "corta"){
@@ -46,7 +46,9 @@ Route::get('/news', function(){
 
 Route::get('/product/{id}', function($id){
     $data = config('array');
-    return view('product', ['data' => $data, 'id' => $id]);
+    $prev = $id - 1;
+    $next = $id + 1;
+    return view('product', ['data' => $data, 'id' => $id, 'prev' => $prev, 'next' => $next]);
 })->name('product');
 
 

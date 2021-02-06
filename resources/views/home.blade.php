@@ -10,7 +10,7 @@
 			@foreach ($lunghe as $pasta)
 				<div class="card">
 					<div class="layover">
-						<a href="{{ route('product', ['id' => $pasta['id']]) }}">
+						<a href="{{ route('product', ['id' => $pasta['key']]) }}">
 							{{ $pasta["titolo"] }}
 						</a>
 					</div>
@@ -24,7 +24,7 @@
 			@foreach ($corte as $pasta)
 				<div class="card">
 					<div class="layover">
-						<a href="{{ route('product', ['id' => $pasta['id']]) }}">
+						<a href="{{ route('product', ['id' => $pasta['key']]) }}">
 							{{ $pasta["titolo"] }}
 						</a>
 					</div>
@@ -38,7 +38,7 @@
 			@foreach ($cortissime as $pasta)
 				<div class="card">
 					<div class="layover">
-						<a href="{{ route('product', ['id' => $pasta['id']]) }}">
+						<a href="{{ route('product', ['id' => $pasta['key']]) }}">
 							{{ $pasta["titolo"] }}
 						</a>
 					</div>
